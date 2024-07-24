@@ -1,1 +1,1 @@
-# dataviz-react-sandbox
+# DataViz React Sandbox

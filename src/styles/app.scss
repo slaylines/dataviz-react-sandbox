@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply h-full scroll-smooth;
+  }
+
+  body {
+    @apply h-full font-primary text-base/1 bg-canvas text-on-canvas;
+  }
+
+  #root {
+    @apply h-full;
+  }
+
+  h1 {
+    @apply h1;
+  }
+
+  h2 {
+    @apply h2;
+  }
+
+  h3 {
+    @apply h3;
+  }
+
+  a {
+    @apply link;
+  }
+}
+
+@layer utilities {
+  .font-primary {
+    font-family: "Helvetica Neue", sans-serif;
+  }
+
+  .h1 {
+    @apply text-lg/1 font-bold;
+  }
+
+  .h2 {
+    @apply text-md/1 font-bold;
+  }
+
+  .h3 {
+    @apply font-medium uppercase;
+  }
+
+  .text-small {
+    @apply text-sm/2;
+  }
+
+  .link {
+    @apply text-base/1 font-medium text-muted hover:text-on-canvas cursor-pointer outline-none;
+  }
+
+  .center-x {
+    @apply left-1/2 -translate-x-1/2;
+  }
+
+  .center-y {
+    @apply top-1/2 -translate-y-1/2;
+  }
+
+  .center {
+    @apply center-x center-y;
+  }
+}
